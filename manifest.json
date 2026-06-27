@@ -1,0 +1,22 @@
+{
+  "name": "Neil's Pizza Companion",
+  "short_name": "Pizza Dough",
+  "description": "Neil's pizza dough calculator and Ovana pizza night planner.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f1ec",
+  "theme_color": "#c0392b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
