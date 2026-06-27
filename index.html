@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Neil's Pizza Companion</title>
+
+  <meta name="theme-color" content="#1f130f" />
+  <meta name="description" content="Neil's pizza dough calculator and Ovana pizza night planner." />
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+</head>
+
+<body>
+  <header class="app-header">
+    <div>
+      <h1>🍕 Neil's Pizza Companion</h1>
+      <p>Lighthouse dough calculator for the Ovana oven</p>
+    </div>
+  </header>
+
+  <main class="app-shell">
+
+    <section class="card">
+      <h2>Dough Calculator</h2>
+
+      <label>
+        Number of dough balls
+        <select id="balls">
+          <option value="2">2</option>
+          <option value="4" selected>4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+        </select>
+      </label>
+
+      <label>
+        Ball weight
+        <select id="ballWeight">
+          <option value="250">250 g</option>
+          <option value="270" selected>270 g</option>
+          <option value="290">290 g</option>
+          <option value="300">300 g</option>
+        </select>
+      </label>
+
+      <label>
+        Hydration
+        <select id="hydration">
+          <option value="58">58% crispier</option>
+          <option value="60" selected>60% standard</option>
+          <option value="62">62%</option>
+          <option value="65">65% wetter</option>
+        </select>
+      </label>
+
+      <label>
+        Ferment time
+        <select id="ferment">
+          <option value="24">24 hours</option>
+          <option value="48" selected>48 hours</option>
+          <option value="72">72 hours</option>
+        </select>
+      </label>
+
+      <label>
+        Cairns temperature
+        <select id="temperature">
+          <option value="summer">Summer / hot</option>
+          <option value="mild" selected>Mild</option>
+          <option value="winter">Winter / cooler</option>
+        </select>
+      </label>
+
+      <button id="calculateBtn">Calculate Dough</button>
+    </section>
+
+    <section class="card">
+      <h2>Ingredients</h2>
+      <div id="ingredients" class="results"></div>
+    </section>
+
+    <section class="card">
+      <h2>Pizza Night Planner</h2>
+
+      <label>
+        Pizza night date
+        <input type="date" id="pizzaDate" />
+      </label>
+
+      <label>
+        First pizza time
+        <input type="time" id="pizzaTime" value="19:30" />
+      </label>
+
+      <button id="timelineBtn">Build Timeline</button>
+
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section class="card">
+      <h2>Ovana Cooking Notes</h2>
+      <ul>
+        <li>Preheat for at least 30 minutes.</li>
+        <li>Launch with flame low to medium.</li>
+        <li>Rotate every 20–25 seconds.</li>
+        <li>Keep the centre slightly thicker than you think.</li>
+        <li>Dry pineapple well before topping.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Pizza Journal</h2>
+
+      <label>
+        Notes from this cook
+        <textarea id="journalText" placeholder="How was the stretch, launch, base, crust and flavour?"></textarea>
+      </label>
+
+      <button id="saveJournalBtn">Save Journal Entry</button>
+
+      <div id="journalEntries"></div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <p>Neil's Pizza Companion v1.0</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
