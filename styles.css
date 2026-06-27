@@ -1,0 +1,277 @@
+/* ==========================================
+   Neil's Pizza Companion
+   Version 1.0
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background:#f4f1ec;
+    --card:#ffffff;
+    --primary:#c0392b;
+    --primary-dark:#8e2b20;
+    --text:#2f2f2f;
+    --border:#dddddd;
+    --success:#2e7d32;
+}
+
+body{
+    font-family:-apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+    background:var(--background);
+    color:var(--text);
+    line-height:1.5;
+}
+
+.app-header{
+
+    background:linear-gradient(
+    135deg,
+    #c0392b,
+    #8e2b20);
+
+    color:white;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+
+}
+
+.app-header h1{
+
+    font-size:2rem;
+
+    margin-bottom:8px;
+
+}
+
+.app-header p{
+
+    opacity:.9;
+
+}
+
+.app-shell{
+
+    width:95%;
+    max-width:900px;
+
+    margin:25px auto;
+
+}
+
+.card{
+
+    background:var(--card);
+
+    border-radius:18px;
+
+    padding:22px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:16px;
+
+    font-weight:600;
+
+}
+
+select,
+input,
+textarea{
+
+    width:100%;
+
+    margin-top:6px;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid var(--border);
+
+    font-size:16px;
+
+    background:white;
+
+}
+
+textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+button{
+
+    width:100%;
+
+    margin-top:10px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.results{
+
+    display:grid;
+
+    gap:10px;
+
+}
+
+.result-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px;
+
+    background:#fafafa;
+
+    border-radius:10px;
+
+    border-left:5px solid var(--primary);
+
+}
+
+.timeline{
+
+    margin-top:20px;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:12px;
+
+    padding:12px;
+
+    background:#fafafa;
+
+    border-left:5px solid var(--success);
+
+    border-radius:10px;
+
+}
+
+.timeline-time{
+
+    width:90px;
+
+    font-weight:bold;
+
+    color:var(--success);
+
+}
+
+.timeline-text{
+
+    flex:1;
+
+}
+
+#journalEntries{
+
+    margin-top:20px;
+
+}
+
+.journal-entry{
+
+    background:#fafafa;
+
+    border-left:5px solid #f39c12;
+
+    padding:14px;
+
+    margin-bottom:14px;
+
+    border-radius:10px;
+
+}
+
+.app-footer{
+
+    text-align:center;
+
+    color:#777;
+
+    padding:30px;
+
+}
+
+@media (max-width:600px){
+
+    .app-header h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .card{
+
+        padding:18px;
+
+    }
+
+}
